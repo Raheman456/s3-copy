@@ -1,5 +1,11 @@
 #!/bin/bash
 
+AWS_ACCESS_KEY_ID="AKIAWZ4MAERDKYGO4CQI"
+AWS_SECRET_ACCESS_KEY="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"
+
+aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
+aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY"
+
 if [ $# -ne 2 ]; then
   echo "Usage: $0 <source_filename> <destination_filename>"
   exit 1
