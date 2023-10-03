@@ -20,9 +20,9 @@ case $choice in
     ;;
   3)
     # If the user selects Option 3, prompt for two string parameters
-    echo "Version 1"
+    echo "Version"
     read param1
-    echo "Version 2"
+    echo "Version"
     read param2
     ;;
   *)
