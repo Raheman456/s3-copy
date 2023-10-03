@@ -2,27 +2,27 @@
 
 # Prompt the user for a choice parameter
 echo "Choose an option:"
-echo "1. Option 1"
-echo "2. Option 2"
-echo "3. Option 3"
+echo "1. cat"
+echo "2. dog"
+echo "3. animals"
 read choice
 
 case $choice in
   1)
     # If the user selects Option 1 or Option 2, prompt for a single string parameter
-    echo "Enter a string parameter:"
+    echo "Version"
     read param1
     ;;
   2)
     # If the user selects Option 1 or Option 2, prompt for a single string parameter
-    echo "Enter a string parameter:"
+    echo "Version"
     read param1
     ;;
   3)
     # If the user selects Option 3, prompt for two string parameters
-    echo "Enter the first string parameter:"
+    echo "Version 1"
     read param1
-    echo "Enter the second string parameter:"
+    echo "Version 2"
     read param2
     ;;
   *)
