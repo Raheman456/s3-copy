@@ -1,29 +1,16 @@
 #!/bin/bash
 
 # Prompt the user for a choice parameter
-echo "Choose an option:"
-echo "1. cat"
-echo "2. dog"
-echo "3. animals"
-read choice
-
-case $choice in
-  1)
-    # If the user selects Option 1 or Option 2, prompt for a single string parameter
-    echo "Version"
-    read param1
+case "$CHOICE_PARAM" in
+  "cat" | "dog")
+    echo "Enter a string parameter:"
+    read STRING_PARAM_1
     ;;
-  2)
-    # If the user selects Option 1 or Option 2, prompt for a single string parameter
-    echo "Version"
-    read param1
-    ;;
-  3)
-    # If the user selects Option 3, prompt for two string parameters
-    echo "Version"
-    read param1
-    echo "Version"
-    read param2
+  "animal")
+    echo "Enter the first string parameter:"
+    read STRING_PARAM_1
+    echo "Enter the second string parameter:"
+    read STRING_PARAM_2
     ;;
   *)
     echo "Invalid choice"
